@@ -4,9 +4,9 @@ import os.path
 class Program:
     def __init__(self,name,rezisable=False):
         self.title = f'Ejercicio {name[0]} - Capitulo {name[1]}'
-        self.icon = './imagenes/descarga.ico'
-        self.alter_icon = './Activity 3/imagenes/descarga.ico'
-        self.size=  "770X470"
+        self.icon = './images/Logotipo_de_la_Universidad_Nacional_de_Colombia.ico'
+        self.alter_icon = './Activity 3/images/Logotipo_de_la_Universidad_Nacional_de_Colombia.ico'
+        self.size = "770x470"
         self.resizable = rezisable
 
     def load(self): 
@@ -33,7 +33,9 @@ class Program:
         else:
             self.executable.resizable(0,0)
 
+        
+
 
 Programa = Program(('18','3'),True)
 Programa.load()
-Programa.executable.mainloop()
+Programa.start()
