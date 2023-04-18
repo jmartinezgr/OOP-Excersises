@@ -33,9 +33,7 @@ class Program:
         else:
             self.executable.resizable(0,0)
 
-        
+    def start(self):
+        self.executable.mainloop()
 
 
-Programa = Program(('18','3'),True)
-Programa.load()
-Programa.start()
