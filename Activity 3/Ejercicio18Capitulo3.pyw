@@ -48,12 +48,6 @@ window.title("Ejercicio 18 Capitulo 3")
 
 window.geometry("400x250")
 
-nombre = tk.StringVar()
-apellidos = tk.StringVar()
-horasTrabadas = tk.StringVar()
-valorHora = tk.StringVar()
-retencion = tk.StringVar()
-
 nombre_label = tk.Label(window, text="Nombres:")
 nombre_label.grid(row=0, column=0, sticky="e")
 nombre_entry = tk.Entry(window)
