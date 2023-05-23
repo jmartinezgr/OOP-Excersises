@@ -24,11 +24,7 @@ def calcularMedidas():
 
 
 window = tk.Tk()
-window.title("Ejercicio 18 Capitulo 3")
-
-#window.geometry("400x250")
-
-lado = tk.StringVar()
+window.title("Ejercicio 19 Capitulo 3")
 
 lado_label = tk.Label(window, text="Lado:")
 lado_label.grid(row=0, column=0)
