@@ -18,7 +18,7 @@ class Numero():
     def getcubo(self):
         return self.valor**3
 
-# Función para realizar la operación con los números seleccionados
+
 def hacer_operacion():
     seleccionado = numeros_listbox.curselection()
     if seleccionado:
@@ -34,7 +34,7 @@ def agregar():
     numeros_listbox.insert(tk.END, int(numero_entry.get()))
 
 
-# Crear ventana
+
 window = tk.Tk()
 window.title("Ejercicio 40 Capitulo 5")
 
@@ -48,13 +48,13 @@ numero_entry.place(x=150,y=50)
 añadir_button = tk.Button(window, text="Añadir", command=agregar)
 añadir_button.place(x=190,y=100)
 
-# Crear Listbox para mostrar los números
+
 numeros_listbox = tk.Listbox(window, selectmode=tk.SINGLE)
 numeros_listbox.place(x=150,y=150)
 
-# Crear botón para realizar la operación
+
 operacion_button = tk.Button(window, text="Realizar Operación", command=hacer_operacion)
 operacion_button.place(x=160,y=350)
 
-# Iniciar el bucle de la ventana
+
 window.mainloop()
