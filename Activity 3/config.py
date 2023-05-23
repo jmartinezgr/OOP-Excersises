@@ -8,7 +8,7 @@ class Program:
         self.alter_icon = './Activity 3/images/Logotipo_de_la_Universidad_Nacional_de_Colombia.ico'
         self.size = "770x470"
         self.resizable = rezisable
-        self.background = '#CCC'
+        self.background = ''
         self.bd = 50
 
     def load(self): 
@@ -34,11 +34,6 @@ class Program:
             self.executable.resizable(1,1)
         else:
             self.executable.resizable(0,0)
-
-        self.executable.config(
-            bd=self.bd,
-            bg=self.background
-        )
 
     def start(self):
         self.executable.mainloop()
